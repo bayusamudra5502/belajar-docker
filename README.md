@@ -18,3 +18,10 @@
 
 ### BUILD
 * `docker build --tag NAMA:TAG PATH_DIR` : membuat docker image dari PATH_DIR. Pastikan sudah ada Dockerfile
+
+## PUSHING
+Untuk melakukan push, perlu dilakukan langkah sebagai berikut:
+1. `docker tag local-image:tagname reponame:tagname` : Ubah nama image lokal ke nama repo di registry biar bisa di push.
+2. `docker push reponame:tagname` : Push ke repo di registry
+
+Klo misal akses ditolak,  login dulu pake `docker login`
