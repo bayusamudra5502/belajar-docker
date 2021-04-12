@@ -37,7 +37,7 @@ Untuk membuat kontainer berkemungkinan untuk berkomunikasi  satu sama lain.
 * `docker network disconnect NAMA_NETWORK NAMA_CONTAINER` : Memutus Koneksi
 * `docker network ls` : Lihat semua network
 
-## VOLUMES
+### VOLUMES
 Untuk membuat volume bersama bisa pake:
 * `docker volume create NAMA` : Bikin volume
 * Untuk memakai volume tersebut, kita bisa menggunakan perintah `docker container create ... -v NAMA_VOLUME:PATH_DI_KONTAINER`
