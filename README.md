@@ -16,7 +16,7 @@
 * `docker container create --name NAMA -p LOCAL:CONTAINER IMAGE -e ENV_NAME=VALUE` : Membuat kontainer ditambah dengan pengaturan environment variable. Klo lebih dari satu,  tambah lagi flagnya sesuai kebutuhan.
 * `docker container start NAMA` : Menjalankan kontainer
 * `docker container stop NAMA` : Memberhentikan kontainer
-* `docker container run IMAGE` : Membuat dan menjalankan kontainer secara langsung. Flagsnya sama kayak create.
+* `docker container run IMAGE` : Membuat dan menjalankan kontainer secara langsung. Flagsnya sama kayak create. Ini bisa disingkat dengan menggunakan `docker run ...`
 * `docker container inspect NAMA` : Melihat konfigurasi dari kontainer yang sudah dibuat
 * `docker container logs NAMA` : Melihat logs dari program
 
