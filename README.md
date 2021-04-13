@@ -16,7 +16,7 @@
 * `docker container create --name NAMA -p LOCAL:CONTAINER IMAGE -e ENV_NAME=VALUE` : Membuat kontainer ditambah dengan pengaturan environment variable. Klo lebih dari satu,  tambah lagi flagnya sesuai kebutuhan.
 * `docker container start NAMA` : Menjalankan kontainer
 * `docker container stop NAMA` : Memberhentikan kontainer
-* `docker container run IMAGE` : Membuat dan menjalankan kontainer secara langsung. Flagsnya sama kayak create.
+* `docker container run IMAGE` : Membuat dan menjalankan kontainer secara langsung. Flagsnya sama kayak create. Ini bisa disingkat dengan menggunakan `docker run ...`
 * `docker container inspect NAMA` : Melihat konfigurasi dari kontainer yang sudah dibuat
 * `docker container logs NAMA` : Melihat logs dari program
 
@@ -37,7 +37,7 @@ Untuk membuat kontainer berkemungkinan untuk berkomunikasi  satu sama lain.
 * `docker network disconnect NAMA_NETWORK NAMA_CONTAINER` : Memutus Koneksi
 * `docker network ls` : Lihat semua network
 
-## VOLUMES
+### VOLUMES
 Untuk membuat volume bersama bisa pake:
 * `docker volume create NAMA` : Bikin volume
 * Untuk memakai volume tersebut, kita bisa menggunakan perintah `docker container create ... -v NAMA_VOLUME:PATH_DI_KONTAINER`
